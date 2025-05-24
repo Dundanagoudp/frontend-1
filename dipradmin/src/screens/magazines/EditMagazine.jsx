@@ -82,7 +82,7 @@ function UpdateMagazinePage2() {
   const handleFormSubmit = async (values) => {
     setLoading(true);
     try {
-      if (!imageUrl || !pdfUrl) {
+      if (!imageUrl) {
         message.error("Please upload both an image and a PDF before submitting.");
         setLoading(false);
         return;
@@ -97,7 +97,7 @@ function UpdateMagazinePage2() {
       const response = await updateMagazine(magazineId, payload);
       if (response.success) {
         message.success("Magazine updated successfully!");
-        navigate("/manage-magazines2"); // Match your table component's route
+        navigate("/manage-magazines2"); 
       } else {
         message.error(response.message || "Failed to update magazine.");
       }
@@ -230,7 +230,7 @@ function UpdateMagazinePage2() {
             <Form.Item
               label="Magazine PDF"
               name="magazinePdf"
-              rules={[{ required: true, message: "PDF is required" }]}
+              // rules={[{ required: true, message: "PDF is required" }]}
             >
               <Upload
                 customRequest={handlePdfUpload}

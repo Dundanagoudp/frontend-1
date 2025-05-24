@@ -210,10 +210,10 @@ function App() {
               }
             />
             <Route
-              path="/edit-article/:articleId"
+              path="/edit-Article/:articleId"
               element={
                 <PrivateRoute>
-                  <EditArticlesPage />
+                  <EditArticlesPage/>
                 </PrivateRoute>
               }
             />

@@ -12,9 +12,9 @@ import {
 import { UploadOutlined } from "@ant-design/icons";
 import { createMagazine } from "../../service/Magazine/MagazineService";
 import { useNavigate } from "react-router-dom";
-import { storage } from "../../service/firebaseConfig"; // Import Firebase storage
+import { storage } from "../../service/firebaseConfig"; 
 import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
-import { getCategories } from "../../service/categories/CategoriesApi"; // Import Category service
+import { getCategories } from "../../service/categories/CategoriesApi"; 
 
 const { TextArea } = Input;
 const { Option } = Select;

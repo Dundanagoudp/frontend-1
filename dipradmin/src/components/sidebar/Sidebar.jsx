@@ -37,7 +37,7 @@ const Sidebar = () => {
             marginBottom: "20px",
             marginLeft: "70px",
             width: "100%",
-            maxWidth: "100px", // Controls max size of logo
+            maxWidth: "100px", 
             height: "auto",
           }}
         />
@@ -69,12 +69,12 @@ const Sidebar = () => {
         {/* Magazines - Visible only to admin */}
         {(role === "admin" || role === "content") && (
           <Menu.Item key="/manage-magazines1" icon={<BookOutlined />}>
-            March of karnataka
+            Varthe janapada
           </Menu.Item>
         )}{" "}
         {(role === "admin" || role === "content") && (
           <Menu.Item key="/manage-magazines2" icon={<BookOutlined />}>
-            Varthe janapada
+             March of karnataka
           </Menu.Item>
         )}{" "}
         {/* {(role === "admin" || role === "content") && (

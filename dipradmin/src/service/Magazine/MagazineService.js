@@ -69,7 +69,7 @@ export const updateMagazine = async (magazineId, magazineData) => {
     const response = await fetch(
       `${BASE_URL}/api/magazine/update/${magazineId}`,
       {
-        method: "PUT", 
+        method: "POST", 
         headers: {
           "Content-Type": "application/json",
         },
